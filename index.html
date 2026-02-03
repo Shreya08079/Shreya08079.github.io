@@ -2,95 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shreya Singh | GitHub Repositories</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Repository Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
             margin: 0;
-            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #333;
         }
+
         header {
-            background: #24292e;
+            padding: 40px;
             color: white;
-            padding: 20px;
             text-align: center;
         }
-        section {
-            max-width: 900px;
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        header p {
+            opacity: 0.9;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 1100px;
             margin: auto;
-            padding: 20px;
         }
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
+
+        .card {
             background: white;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 6px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        a {
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #203a43;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #1d976c, #93f9b9);
+            color: #0f2027;
             text-decoration: none;
-            color: #0366d6;
-            font-weight: bold;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: opacity 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .card a:hover {
+            opacity: 0.85;
         }
+
         footer {
             text-align: center;
-            padding: 15px;
-            background: #eee;
-            margin-top: 30px;
+            padding: 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>👩‍💻 Shreya Singh</h1>
-    <p>GitHub Repositories Index</p>
+    <h1>Training Repository Dashboard</h1>
+    <p>Centralized access to all training & practice repositories</p>
+    <p><strong>Candidate:</strong> Shreya Singh</p>
 </header>
 
-<section>
-    <h2>📁 Projects</h2>
-    <ul>
-        <li><a href="https://github.com/Shreya08079/Dotnet-Training" target="_blank">Dotnet-Training</a> – C# and .NET practice</li>
-        <li><a href="https://github.com/Shreya08079/SQL_Practice" target="_blank">SQL_Practice</a> – SQL queries and practice</li>
-        <li><a href="https://github.com/Shreya08079/TopBrains" target="_blank">TopBrains</a> – C# project</li>
+<div class="container">
+    <div class="grid">
 
-        <li>
-  <a href="https://github.com/Shreya08079/Weekly-Test1" target="_blank">
-    Weekly Test 1
-  </a> – Practice assessment
-</li>
+        <div class="card">
+            <h3>.NET Training</h3>
+            <p>C# and .NET practice, concepts, and exercises</p>
+            <a href="https://github.com/Shreya08079/Dotnet-Training" target="_blank">
+                View Repository
+            </a>
+        </div>
 
-<li>
-  <a href="https://github.com/Shreya08079/WeeklyTest2" target="_blank">
-    Weekly Test 2
-  </a> – Practice assessment
-</li>
+        <div class="card">
+            <h3>SQL Practice</h3>
+            <p>SQL queries, joins, constraints, and database practice</p>
+            <a href="https://github.com/Shreya08079/SQL_Practice" target="_blank">
+                View Repository
+            </a>
+        </div>
 
-<li>
-  <a href="https://github.com/Shreya08079/WeeklyTest3" target="_blank">
-    Weekly Test 3
-  </a> – Practice assessment
-</li>
+        <div class="card">
+            <h3>TopBrains</h3>
+            <p>TopBrains project and training work</p>
+            <a href="https://github.com/Shreya08079/TopBrains" target="_blank">
+                View Repository
+            </a>
+        </div>
 
+        <div class="card">
+            <h3>Weekly Test 1</h3>
+            <p>Week 1 evaluation and coding assessment</p>
+            <a href="https://github.com/Shreya08079/Weekly-Test1" target="_blank">
+                View Repository
+            </a>
+        </div>
 
-    </ul>
-</section>
+        <div class="card">
+            <h3>Weekly Test 2</h3>
+            <p>Week 2 evaluation and problem solving</p>
+            <a href="https://github.com/Shreya08079/WeeklyTest2" target="_blank">
+                View Repository
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Weekly Test 3</h3>
+            <p>Week 3 evaluation and hands-on tasks</p>
+            <a href="https://github.com/Shreya08079/WeeklyTest3" target="_blank">
+                View Repository
+            </a>
+        </div>
+
+    </div>
+</div>
 
 <footer>
-    <p>🔗 GitHub: <a href="https://github.com/Shreya08079" target="_blank">github.com/Shreya08079</a></p>
+    © 2026 · Training Repository Index · Shreya Singh
 </footer>
 
 </body>
